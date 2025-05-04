@@ -7,9 +7,9 @@ Trabajo de Final de Cuatrimestre (Prog. Avanzada)
 
 ## 📚 Índice
 
-- [Características](#características)
-- [Guía de Instalación](#guía-de-instalación)
-- [Licencia](#licencia)
+- [Características](#Características)
+- [Guía de Instalación](#Guía-de-Instalación)
+- [Licencia](#Licencia)
 
 ---
 
