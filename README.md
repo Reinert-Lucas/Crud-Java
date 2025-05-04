@@ -32,10 +32,8 @@ Permite Buscar los Turnos por Nro, comprobar los datos del Auto y Dueño y reali
 
 3. **Descarga los archivos necesarios:**
 
-  Este proyector utiliza las librerias de:
   - mysql-connector-j-9.3.0
   - jdatepicker-1.3.4
-  _Asegurate de descargarlas y agregarlas para que funcione._
 
 4. **Importa de Base de Datos**
 
