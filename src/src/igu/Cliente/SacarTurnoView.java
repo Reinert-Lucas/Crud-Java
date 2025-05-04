@@ -74,7 +74,13 @@ public class SacarTurnoView extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(0, 153, 0));
+
+        jLabel1.setFont(new java.awt.Font("Liberation Sans", 1, 24)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("SACAR TURNO");
+
+        fechaPanel.setBackground(new java.awt.Color(0, 153, 0));
 
         javax.swing.GroupLayout fechaPanelLayout = new javax.swing.GroupLayout(fechaPanel);
         fechaPanel.setLayout(fechaPanelLayout);
@@ -87,25 +93,42 @@ public class SacarTurnoView extends javax.swing.JFrame {
             .addGap(0, 260, Short.MAX_VALUE)
         );
 
+        jLabel2.setFont(new java.awt.Font("Liberation Sans", 1, 14)); // NOI18N
         jLabel2.setText("HORA");
 
+        jLabel3.setFont(new java.awt.Font("Liberation Sans", 1, 14)); // NOI18N
         jLabel3.setText("AUTO (Ingrese la Patente, Sin Espacios)");
 
-        turnoBtn.setText("SOLICITAR TURNO");
+        patenteInput.setBackground(new java.awt.Color(153, 153, 153));
+        patenteInput.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        turnoBtn.setBackground(new java.awt.Color(153, 153, 153));
+        turnoBtn.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        turnoBtn.setForeground(new java.awt.Color(51, 51, 51));
+        turnoBtn.setText("Solicitar Turno");
+        turnoBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         turnoBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 turnoBtnActionPerformed(evt);
             }
         });
 
+        jLabel4.setFont(new java.awt.Font("Liberation Sans", 1, 14)); // NOI18N
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("FECHA (Lunes a Viernes)");
 
-        fechaBtn.setText("COMPROBAR FECHA");
+        fechaBtn.setBackground(new java.awt.Color(153, 153, 153));
+        fechaBtn.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        fechaBtn.setForeground(new java.awt.Color(51, 51, 51));
+        fechaBtn.setText("Comprobar Fecha");
+        fechaBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         fechaBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 fechaBtnActionPerformed(evt);
             }
         });
+
+        horaPanel.setBackground(new java.awt.Color(0, 153, 0));
 
         javax.swing.GroupLayout horaPanelLayout = new javax.swing.GroupLayout(horaPanel);
         horaPanel.setLayout(horaPanelLayout);
@@ -126,60 +149,61 @@ public class SacarTurnoView extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(fechaPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(horaPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(fechaPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(fechaBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(patenteInput, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel3)
-                                    .addComponent(patenteInput, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(79, 79, 79))
+                                    .addComponent(jLabel2)
+                                    .addComponent(horaPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(83, 83, 83)
-                                .addComponent(fechaBtn)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(turnoBtn)
-                        .addGap(39, 39, 39))
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(127, 127, 127)))
+                        .addGap(79, 79, 79))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(231, 231, 231))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(turnoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(fechaPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(fechaBtn))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3))
-                .addGap(12, 12, 12)
-                .addComponent(horaPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(patenteInput, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
-                .addComponent(turnoBtn)
-                .addGap(38, 38, 38))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(fechaBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(patenteInput, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(horaPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(5, 5, 5)
+                .addComponent(turnoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(253, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 600, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -188,46 +212,6 @@ public class SacarTurnoView extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void cargarHorariosDisponibles() {
-        Date selectedDate = (Date) datePicker.getModel().getValue();
-
-        if (selectedDate != null) {
-            java.sql.Date sqlDate = new java.sql.Date(selectedDate.getTime());
-
-            try (Connection conn = Conexion.getConexion()) {
-                String query = "SELECT hora FROM turnos WHERE fecha = ?";
-                PreparedStatement pst = conn.prepareStatement(query);
-                pst.setDate(1, sqlDate);
-                ResultSet rs = pst.executeQuery();
-
-                List<String> ocupados = new ArrayList<>();
-                while (rs.next()) {
-                    // Recorta a formato HH:mm para comparar bien
-                    ocupados.add(rs.getString("hora").substring(0, 5));
-                }
-
-                horaComboBox.removeAllItems();
-
-                // Horarios disponibles de 08:00 a 20:00
-                for (int i = 8; i <= 20; i++) {
-                    String hora = String.format("%02d:00", i);
-                    if (!ocupados.contains(hora)) {
-                        horaComboBox.addItem(hora);
-                    }
-                }
-
-                if (horaComboBox.getItemCount() == 0) {
-                    JOptionPane.showMessageDialog(this, "No hay horarios disponibles para esa fecha.");
-                }
-
-            } catch (Exception ex) {
-                JOptionPane.showMessageDialog(this, "Error al consultar turnos: " + ex.getMessage());
-            }
-        } else {
-            JOptionPane.showMessageDialog(this, "¡Por favor selecciona una fecha!");
-        }
-    }
 
     private void fechaBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechaBtnActionPerformed
         Date fechaTurno = (Date) datePicker.getModel().getValue();
@@ -321,8 +305,47 @@ public class SacarTurnoView extends javax.swing.JFrame {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Error al solicitar el turno, intente nuevamente" + e.getMessage());
         }
-
     }//GEN-LAST:event_turnoBtnActionPerformed
+
+    private void cargarHorariosDisponibles() {
+        Date selectedDate = (Date) datePicker.getModel().getValue();
+
+        if (selectedDate != null) {
+            java.sql.Date sqlDate = new java.sql.Date(selectedDate.getTime());
+
+            try (Connection conn = Conexion.getConexion()) {
+                String query = "SELECT hora FROM turnos WHERE fecha = ?";
+                PreparedStatement pst = conn.prepareStatement(query);
+                pst.setDate(1, sqlDate);
+                ResultSet rs = pst.executeQuery();
+
+                List<String> ocupados = new ArrayList<>();
+                while (rs.next()) {
+                    // Recorta a formato HH:mm para comparar bien
+                    ocupados.add(rs.getString("hora").substring(0, 5));
+                }
+
+                horaComboBox.removeAllItems();
+
+                // Horarios disponibles de 08:00 a 20:00
+                for (int i = 8; i <= 20; i++) {
+                    String hora = String.format("%02d:00", i);
+                    if (!ocupados.contains(hora)) {
+                        horaComboBox.addItem(hora);
+                    }
+                }
+
+                if (horaComboBox.getItemCount() == 0) {
+                    JOptionPane.showMessageDialog(this, "No hay horarios disponibles para esa fecha.");
+                }
+
+            } catch (Exception ex) {
+                JOptionPane.showMessageDialog(this, "Error al consultar turnos: " + ex.getMessage());
+            }
+        } else {
+            JOptionPane.showMessageDialog(this, "¡Por favor selecciona una fecha!");
+        }
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton fechaBtn;

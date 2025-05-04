@@ -39,18 +39,22 @@ public class BuscarTurnoView extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(0, 153, 0));
+
         jLabel1.setBackground(javax.swing.UIManager.getDefaults().getColor("Component.accentColor"));
         jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Buscar Turno");
 
+        turnoInput.setBackground(new java.awt.Color(153, 153, 153));
+        turnoInput.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         turnoInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 turnoInputActionPerformed(evt);
             }
         });
 
-        loginBtn.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.focusedBackground"));
+        loginBtn.setBackground(new java.awt.Color(153, 153, 153));
         loginBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         loginBtn.setText("Buscar");
         loginBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -77,13 +81,13 @@ public class BuscarTurnoView extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
+                .addGap(45, 45, 45)
                 .addComponent(jLabel1)
-                .addGap(31, 31, 31)
+                .addGap(45, 45, 45)
                 .addComponent(turnoInput, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(25, 25, 25)
                 .addComponent(loginBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(439, Short.MAX_VALUE))
+                .addContainerGap(393, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
