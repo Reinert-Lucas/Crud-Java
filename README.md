@@ -17,9 +17,9 @@ Trabajo de Final de Cuatrimestre (Prog. Avanzada)
 
 CRUD hecho con Java - Sistema para la VTV-Argentina
 El mismo permite ingresar como Cliente y como Inspector:
-- **Como Cliente**:
+- **Como Cliente**: 
 Permite Ver, Cargar y Eliminar sus Autos, ademas de permitir sacar un turno para realizar la VTV. 
-- **Como Inspector:**
+- **Como Inspector:** 
 Permite Buscar los Turnos por Nro, comprobar los datos del Auto y Dueño y realizar la validación de cada etapa de la VTV, para asi saber si esta aprobada o no.
 
 ---
@@ -32,10 +32,10 @@ Permite Buscar los Turnos por Nro, comprobar los datos del Auto y Dueño y reali
 
 3. **Descarga los archivos necesarios:**
 
-Este proyector utiliza las librerias de:
-- mysql-connector-j-9.3.0
-- jdatepicker-1.3.4
-_Asegurate de descargarlas y agregarlas para que funcione._
+  Este proyector utiliza las librerias de:
+  - mysql-connector-j-9.3.0
+  - jdatepicker-1.3.4
+  _Asegurate de descargarlas y agregarlas para que funcione._
 
 4. **Importa de Base de Datos**
 
