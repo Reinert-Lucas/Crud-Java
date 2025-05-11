@@ -1,7 +1,9 @@
 # CRUD en Java
 
-Trabajo de Final de Cuatrimestre (Prog. Avanzada)
-- 2do Año de la Tec. Sup. de Apps y Paginas Web - ISES
+Trabajo de Final de Cuatrimestre (Prog. Avanzada) de la Tec. Sup. de Apps y Paginas Web  
+Instituto Superior Espiritu Santo - 0405  
+Posadas, Misiones, Argentina  
+Creado por: Reinert Lucas Iván - 2do Año  
 
 ---
 
